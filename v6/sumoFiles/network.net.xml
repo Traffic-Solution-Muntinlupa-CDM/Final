@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2026-04-04T16:39:22.719965+08:00 by Eclipse SUMO netedit 1.26.0
+<neteditConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/neteditConfiguration.xsd">
+
+    <input>
+        <sumocfg-file value="C:\Users\rohb\Documents\Thesis\Multi-Factor-Traffic-Solution\v4\sumoFiles\network.sumocfg"/>
+        <additional-files value="C:\Users\rohb\Documents\Thesis\Multi-Factor-Traffic-Solution\v4\sumoFiles\additionals.add.xml"/>
+        <route-files value="C:\Users\rohb\Documents\Thesis\Multi-Factor-Traffic-Solution\v4\sumoFiles\demands.rou.xml"/>
+        <sumo-net-file value="C:\Users\rohb\Documents\Thesis\Multi-Factor-Traffic-Solution\v4\sumoFiles\network.net.xml"/>
+    </input>
+
+    <output>
+        <tls-file value="C:\Users\rohb\Documents\Thesis\Multi-Factor-Traffic-Solution\v4\sumoFiles\traffic.tll.xml"/>
+        <output-file value="C:\Users\rohb\Documents\Thesis\Multi-Factor-Traffic-Solution\v4\sumoFiles\network.net.xml"/>
+    </output>
+
+    <processing>
+        <geometry.min-radius.fix.railways value="false"/>
+        <geometry.avoid-overlap value="false"/>
+        <geometry.max-grade.fix value="false"/>
+        <offset.disable-normalization value="true"/>
+        <lefthand value="0"/>
+    </processing>
+
+    <junctions>
+        <no-internal-links value="false"/>
+        <no-turnarounds value="true"/>
+        <junctions.corner-detail value="5"/>
+        <junctions.limit-turn-speed value="5.50"/>
+        <rectangular-lane-cut value="0"/>
+    </junctions>
+
+    <pedestrian>
+        <walkingareas value="0"/>
+    </pedestrian>
+
+    <netedit>
+        <new-network value="false"/>
+    </netedit>
+
+</neteditConfiguration>
+-->
+
+<net version="1.20" junctionCornerDetail="5" limitTurnSpeed="5.50" avoidOverlap="0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/net_file.xsd">
+
+    <location netOffset="0.00,0.00" convBoundary="-345.37,-248.39,273.64,246.55" origBoundary="-10000000000.00,-10000000000.00,10000000000.00,10000000000.00" projParameter="!"/>
+
+    <edge id=":J13_0" function="internal">
+        <lane id=":J13_0_0" index="0" disallow="pedestrian" speed="3.90" length="2.59" shape="-59.45,54.01 -60.16,53.94 -60.67,53.66 -60.99,53.17 -61.12,52.47"/>
+    </edge>
+    <edge id=":J13_w0" function="walkingarea">
+        <lane id=":J13_w0_0" index="0" allow="pedestrian" speed="2.78" length="5.96" width="2.00" shape="-62.72,52.52 -64.72,52.60 -64.51,54.19 -64.03,55.48 -63.27,56.46 -62.23,57.15 -60.90,57.53 -59.30,57.61 -59.38,55.61 -60.37,55.56 -61.18,55.33 -61.83,54.91 -62.30,54.30 -62.59,53.50"/>
+    </edge>
+    <edge id=":J14_0" function="internal">
+        <lane id=":J14_0_0" index="0" disallow="pedestrian" speed="3.91" length="2.50" shape="-62.27,20.23 -62.20,19.55 -61.93,19.05 -61.46,18.72 -60.80,18.58"/>
+    </edge>
+    <edge id=":J14_w0" function="walkingarea">
+        <lane id=":J14_w0_0" index="0" allow="pedestrian" speed="2.78" length="5.81" width="2.00" shape="-60.93,16.98 -61.09,14.99 -62.60,15.25 -63.82,15.76 -64.76,16.53 -65.41,17.55 -65.78,18.83 -65.87,20.36 -63.87,20.28 -63.82,19.34 -63.59,18.56 -63.19,17.93 -62.61,17.46 -61.86,17.14"/>
+    </edge>
+    <edge id=":J5_w0" function="walkingarea">
+        <lane id=":J5_w0_0" index="0" allow="pedestrian" speed="2.78" length="8.40" width="2.00" shape="-346.34,42.63 -346.94,40.72 -343.80,50.64 -344.40,48.73"/>
+    </edge>
+    <edge id=":J9_w0" function="walkingarea">
+        <lane id=":J9_w0_0" index="0" allow="pedestrian" speed="2.78" length="8.40" width="2.00" shape="273.76,20.10 273.83,22.10 273.45,11.70 273.52,13.70"/>
+    </edge>
+    <edge id=":main_junction_0" function="internal">
+        <lane id=":main_junction_0_0" index="0" disallow="pedestrian" speed="8.35" length="15.08" shape="-9.38,60.70 -10.29,56.87 -12.33,54.20 -15.48,52.68 -19.75,52.31"/>
+    </edge>
+    <edge id=":main_junction_1" function="internal">
+        <lane id=":main_junction_1_0" index="0" disallow="pedestrian" speed="13.89" length="76.40" shape="-9.38,60.70 -12.48,27.97 -15.71,4.66 -19.08,-9.24 -22.58,-13.73"/>
+    </edge>
+    <edge id=":main_junction_2" function="internal">
+        <lane id=":main_junction_2_0" index="0" disallow="pedestrian" speed="13.89" length="105.02" shape="-9.38,60.70 -19.07,-43.88"/>
+        <lane id=":main_junction_2_1" index="1" disallow="pedestrian" speed="13.89" length="105.02" shape="-6.19,60.44 -15.88,-44.13"/>
+    </edge>
+    <edge id=":main_junction_4" function="internal">
+        <lane id=":main_junction_4_0" index="0" disallow="pedestrian" speed="13.89" length="59.71" shape="-6.19,60.44 -7.43,35.85 -6.62,18.17 -3.75,7.41 1.19,3.56"/>
+    </edge>
+    <edge id=":main_junction_5" function="internal">
+        <lane id=":main_junction_5_0" index="0" disallow="pedestrian" speed="13.89" length="49.81" shape="1.23,6.77 -0.82,10.22 -1.67,20.23 -1.33,36.80 -0.05,55.93"/>
+        <lane id=":main_junction_5_1" index="1" disallow="pedestrian" speed="13.89" length="51.02" shape="1.23,6.77 -2.22,10.31 -4.07,20.40 -4.32,37.02 -3.20,56.19"/>
+    </edge>
+    <edge id=":main_junction_7" function="internal">
+        <lane id=":main_junction_7_0" index="0" disallow="pedestrian" speed="13.89" length="51.20" shape="1.23,6.77 -4.85,14.10 -9.26,29.62 -13.66,45.10 -19.75,52.31"/>
+    </edge>
+    <edge id=":main_junction_8" function="internal">
+        <lane id=":main_junction_8_0" index="0" disallow="pedestrian" speed="13.89" length="32.40" shape="1.23,6.77 -5.29,3.75 -10.67,-3.47 -16.05,-10.69 -22.58,-13.73"/>
+    </edge>
+    <edge id=":main_junction_9" function="internal">
+        <lane id=":main_junction_9_0" index="0" disallow="pedestrian" speed="13.89" length="50.89" shape="1.23,6.77 -3.52,0.21 -10.15,-15.14 -16.17,-32.19 -18.09,-39.95"/>
+        <lane id=":main_junction_9_1" index="1" disallow="pedestrian" speed="13.89" length="52.41" shape="1.23,6.77 -4.75,3.91 -9.59,-5.53 -13.30,-21.54 -15.42,-40.16"/>
+    </edge>
+    <edge id=":main_junction_28" function="internal">
+        <lane id=":main_junction_28_0" index="0" disallow="pedestrian" speed="13.89" length="4.00" shape="-0.05,55.93 0.22,59.92"/>
+        <lane id=":main_junction_28_1" index="0" disallow="pedestrian" speed="13.89" length="4.00" shape="-3.20,56.19 -2.97,60.18"/>
+    </edge>
+    <edge id=":main_junction_29" function="internal">
+        <lane id=":main_junction_29_0" index="0" disallow="pedestrian" speed="13.89" length="4.05" shape="-18.09,-39.95 -19.07,-43.88"/>
+        <lane id=":main_junction_29_1" index="0" disallow="pedestrian" speed="13.89" length="4.00" shape="-15.42,-40.16 -15.88,-44.13"/>
+    </edge>
+    <edge id=":main_junction_11" function="internal">
+        <lane id=":main_junction_11_0" index="0" disallow="pedestrian" speed="13.89" length="50.42" shape="-9.49,-44.63 -7.41,-23.38 -4.93,-8.26 -2.07,0.72 1.19,3.56"/>
+    </edge>
+    <edge id=":main_junction_12" function="internal">
+        <lane id=":main_junction_12_0" index="0" disallow="pedestrian" speed="13.89" length="105.01" shape="-9.49,-44.63 0.22,59.92"/>
+        <lane id=":main_junction_12_1" index="1" disallow="pedestrian" speed="13.89" length="105.01" shape="-12.68,-44.38 -2.97,60.18"/>
+    </edge>
+    <edge id=":main_junction_14" function="internal">
+        <lane id=":main_junction_14_0" index="0" disallow="pedestrian" speed="13.89" length="99.36" shape="-12.68,-44.38 -10.33,-2.31 -10.72,27.83 -13.87,46.03 -19.75,52.31"/>
+    </edge>
+    <edge id=":main_junction_15" function="internal">
+        <lane id=":main_junction_15_0" index="0" disallow="pedestrian" speed="12.26" length="35.15" shape="-12.68,-44.38 -12.43,-31.25 -13.99,-21.77 -17.38,-15.92 -22.58,-13.73"/>
+    </edge>
+    <edge id=":main_junction_16" function="internal">
+        <lane id=":main_junction_16_0" index="0" disallow="pedestrian" speed="11.05" length="24.34" shape="-22.72,-16.92 -20.35,-18.74 -18.95,-23.84 -18.52,-32.22 -18.88,-39.89"/>
+        <lane id=":main_junction_16_1" index="1" disallow="pedestrian" speed="11.38" length="26.12" shape="-22.72,-16.92 -18.95,-18.83 -16.55,-24.00 -15.53,-32.43 -15.76,-40.13"/>
+    </edge>
+    <edge id=":main_junction_18" function="internal">
+        <lane id=":main_junction_18_0" index="0" disallow="pedestrian" speed="13.89" length="32.46" shape="-22.72,-16.92 -16.17,-13.89 -10.76,-6.67 -5.36,0.55 1.19,3.56"/>
+    </edge>
+    <edge id=":main_junction_19" function="internal">
+        <lane id=":main_junction_19_0" index="0" disallow="pedestrian" speed="13.89" length="79.37" shape="-22.72,-16.92 -15.05,-12.50 -8.68,1.78 -3.59,25.92 -0.23,55.94"/>
+        <lane id=":main_junction_19_1" index="1" disallow="pedestrian" speed="13.89" length="77.89" shape="-22.72,-16.92 -16.45,-12.41 -11.07,1.94 -6.58,26.14 -3.39,56.20"/>
+    </edge>
+    <edge id=":main_junction_21" function="internal">
+        <lane id=":main_junction_21_0" index="0" disallow="pedestrian" speed="11.73" length="69.30" shape="-22.72,-16.92 -19.75,52.31"/>
+    </edge>
+    <edge id=":main_junction_30" function="internal">
+        <lane id=":main_junction_30_0" index="0" disallow="pedestrian" speed="11.05" length="4.00" shape="-18.88,-39.89 -19.07,-43.88"/>
+        <lane id=":main_junction_30_1" index="0" disallow="pedestrian" speed="11.38" length="4.00" shape="-15.76,-40.13 -15.88,-44.13"/>
+    </edge>
+    <edge id=":main_junction_31" function="internal">
+        <lane id=":main_junction_31_0" index="0" disallow="pedestrian" speed="13.89" length="4.00" shape="-0.23,55.94 0.22,59.92"/>
+        <lane id=":main_junction_31_1" index="0" disallow="pedestrian" speed="13.89" length="4.00" shape="-3.39,56.20 -2.97,60.18"/>
+    </edge>
+    <edge id=":main_junction_22" function="internal">
+        <lane id=":main_junction_22_0" index="0" disallow="pedestrian" speed="7.77" length="29.15" shape="-21.34,15.40 -22.58,-13.73"/>
+    </edge>
+    <edge id=":main_junction_23" function="internal">
+        <lane id=":main_junction_23_0" index="0" disallow="pedestrian" speed="13.89" length="56.25" shape="-21.34,15.40 -18.63,11.49 -17.36,0.31 -17.50,-18.15 -18.83,-39.89"/>
+        <lane id=":main_junction_23_1" index="1" disallow="pedestrian" speed="13.89" length="57.52" shape="-21.34,15.40 -17.24,11.38 -14.96,0.12 -14.51,-18.39 -15.67,-40.14"/>
+    </edge>
+    <edge id=":main_junction_25" function="internal">
+        <lane id=":main_junction_25_0" index="0" disallow="pedestrian" speed="13.89" length="25.84" shape="-21.34,15.40 -15.01,13.30 -10.08,9.43 -5.14,5.58 1.19,3.56"/>
+    </edge>
+    <edge id=":main_junction_26" function="internal">
+        <lane id=":main_junction_26_0" index="0" disallow="pedestrian" speed="13.89" length="49.63" shape="-21.34,15.40 -13.31,17.65 -7.04,25.81 -2.53,39.91 -0.33,55.95"/>
+        <lane id=":main_junction_26_1" index="1" disallow="pedestrian" speed="13.89" length="47.69" shape="-21.34,15.40 -14.70,17.76 -9.43,26.01 -5.52,40.15 -3.48,56.21"/>
+    </edge>
+    <edge id=":main_junction_32" function="internal">
+        <lane id=":main_junction_32_0" index="0" disallow="pedestrian" speed="13.89" length="4.00" shape="-18.83,-39.89 -19.07,-43.88"/>
+        <lane id=":main_junction_32_1" index="0" disallow="pedestrian" speed="13.89" length="4.00" shape="-15.67,-40.14 -15.88,-44.13"/>
+    </edge>
+    <edge id=":main_junction_33" function="internal">
+        <lane id=":main_junction_33_0" index="0" disallow="pedestrian" speed="13.89" length="4.01" shape="-0.33,55.95 0.22,59.92"/>
+        <lane id=":main_junction_33_1" index="0" disallow="pedestrian" speed="13.89" length="4.00" shape="-3.48,56.21 -2.97,60.18"/>
+    </edge>
+    <edge id=":main_junction_c0" function="crossing" crossingEdges="northbound_exit southbound_entrance">
+        <lane id=":main_junction_c0_0" index="0" allow="pedestrian" speed="2.78" length="12.83" width="4.00" shape="1.65,57.80 -11.13,58.83" outlineShape="1.81,59.79 -10.97,60.83 -11.07,60.84 -10.97,60.83 -11.38,58.62 -12.17,56.91 1.51,55.80"/>
+    </edge>
+    <edge id=":main_junction_c1" function="crossing" crossingEdges="southbound_exit northbound_entrance">
+        <lane id=":main_junction_c1_0" index="0" allow="pedestrian" speed="2.78" length="12.81" width="4.00" shape="-20.51,-41.77 -7.74,-42.76" outlineShape="-20.66,-43.76 -7.79,-44.76 -7.54,-40.77 -20.41,-39.77 -20.66,-43.76 -22.66,-43.61 -22.89,-20.52 -22.77,-18.52 -21.62,-19.29 -20.76,-21.44 -20.23,-24.96 -20.04,-29.85 -20.18,-36.12 -20.41,-39.77"/>
+    </edge>
+    <edge id=":main_junction_w0" function="walkingarea">
+        <lane id=":main_junction_w0_0" index="0" allow="pedestrian" speed="2.78" length="7.12" width="4.00" shape="-19.69,53.91 -19.60,55.91 -12.97,60.99 -10.97,60.83 -11.38,58.62 -12.20,56.83 -13.45,55.46 -15.11,54.52 -17.19,54.00"/>
+    </edge>
+    <edge id=":main_junction_w1" function="walkingarea">
+        <lane id=":main_junction_w1_0" index="0" allow="pedestrian" speed="2.78" length="33.68" width="4.00" shape="1.81,59.79 3.81,59.63 1.34,10.37 1.21,8.37 0.33,9.86 -0.25,14.18 -0.38,21.34 -0.09,31.33 0.64,44.14"/>
+    </edge>
+    <edge id=":main_junction_w2" function="walkingarea">
+        <lane id=":main_junction_w2_0" index="0" allow="pedestrian" speed="2.78" length="31.11" width="4.00" shape="1.21,1.96 1.08,-0.04 -5.90,-44.91 -7.89,-44.76 -6.63,-30.38 -5.27,-18.64 -3.82,-9.54 -2.28,-3.07 -0.65,0.77"/>
+    </edge>
+    <edge id=":main_junction_w3" function="walkingarea">
+        <lane id=":main_junction_w3_0" index="0" allow="pedestrian" speed="2.78" length="16.26" width="4.00" shape="-20.66,-43.76 -22.66,-43.61 -22.89,-20.52 -22.77,-18.52 -21.62,-19.29 -20.76,-21.44 -20.23,-24.96 -20.04,-29.85 -20.18,-36.12"/>
+    </edge>
+    <edge id=":main_junction_w4" function="walkingarea">
+        <lane id=":main_junction_w4_0" index="0" allow="pedestrian" speed="2.78" length="23.95" width="2.00" shape="-22.53,-12.13 -22.41,-10.13 -21.53,11.80 -21.37,13.80"/>
+    </edge>
+
+    <edge id="E4" from="J13" to="J14" priority="-1">
+        <lane id="E4_0" index="0" allow="pedestrian" speed="13.89" length="32.26" width="2.00" shape="-63.72,52.56 -64.87,20.32"/>
+        <lane id="E4_1" index="1" disallow="pedestrian" speed="13.89" length="32.26" shape="-61.12,52.47 -62.27,20.23"/>
+    </edge>
+    <edge id="brudger_entrance" from="main_junction" to="J9" priority="-1" shape="-1.32,5.33 35.52,2.92 64.00,1.90 107.62,2.44 155.72,6.27 219.13,13.47 262.09,17.32 273.64,16.90">
+        <lane id="brudger_entrance_0" index="0" allow="pedestrian" speed="13.89" length="273.20" width="2.00" shape="1.15,0.96 35.31,-1.28 63.95,-2.30 107.81,-1.76 156.12,2.09 219.55,9.29 262.20,13.11 273.49,12.70"/>
+        <lane id="brudger_entrance_1" index="1" disallow="pedestrian" speed="13.89" length="273.20" shape="1.19,3.56 35.44,1.32 63.98,0.30 107.69,0.84 155.87,4.68 219.29,11.88 262.13,15.72 273.58,15.30"/>
+    </edge>
+    <edge id="brudger_exit" from="J9" to="main_junction" priority="-1" shape="273.64,16.90 262.09,17.32 219.13,13.47 155.72,6.27 107.62,2.44 64.00,1.90 35.52,2.92 -1.32,5.33">
+        <lane id="brudger_exit_0" index="0" allow="pedestrian" speed="13.89" length="273.33" width="2.00" shape="273.79,21.10 261.98,21.53 218.71,17.65 155.32,10.45 107.43,6.64 64.05,6.10 35.73,7.12 1.27,9.37"/>
+        <lane id="brudger_exit_1" index="1" disallow="pedestrian" speed="13.89" length="273.33" shape="273.70,18.50 262.05,18.92 218.97,15.06 155.57,7.86 107.55,4.04 64.02,3.50 35.60,4.52 1.23,6.77"/>
+    </edge>
+    <edge id="cityhall_entrance" from="main_junction" to="J13" priority="-1" shape="-13.49,50.44 -59.52,52.41">
+        <lane id="cityhall_entrance_0" index="0" allow="pedestrian" speed="13.89" length="39.73" width="2.00" shape="-19.64,54.91 -59.34,56.61"/>
+        <lane id="cityhall_entrance_1" index="1" disallow="pedestrian" speed="13.89" length="39.73" shape="-19.75,52.31 -59.45,54.01"/>
+    </edge>
+    <edge id="cityhall_exit" from="J14" to="main_junction" priority="-1" shape="-60.67,20.17 -16.04,16.58">
+        <lane id="cityhall_exit_0" index="0" allow="pedestrian" speed="13.89" length="39.64" width="2.00" shape="-61.01,15.98 -21.45,12.80"/>
+        <lane id="cityhall_exit_1" index="1" disallow="pedestrian" speed="13.89" length="39.64" shape="-60.80,18.58 -21.34,15.40"/>
+    </edge>
+    <edge id="estanislao_entrance" from="main_junction" to="J5" priority="-1" shape="-18.50,-15.58 -39.98,-14.26 -65.64,-11.90 -78.33,-11.62 -110.45,-7.75 -191.07,6.05 -264.76,20.14 -345.37,45.68">
+        <lane id="estanislao_entrance_0" index="0" allow="pedestrian" speed="13.89" length="328.79" width="2.00" shape="-22.47,-11.13 -39.66,-10.07 -65.40,-7.70 -78.03,-7.43 -109.84,-3.59 -190.32,10.18 -263.73,24.22 -344.10,49.68"/>
+        <lane id="estanislao_entrance_1" index="1" disallow="pedestrian" speed="13.89" length="328.79" shape="-22.58,-13.73 -39.86,-12.66 -65.55,-10.30 -78.22,-10.02 -110.22,-6.17 -190.78,7.62 -264.37,21.69 -344.89,47.21"/>
+    </edge>
+    <edge id="estanislao_exit" from="J5" to="main_junction" priority="-1" shape="-345.37,45.68 -264.76,20.14 -191.07,6.05 -110.45,-7.75 -78.33,-11.62 -65.64,-11.90 -39.98,-14.26 -18.50,-15.58">
+        <lane id="estanislao_exit_0" index="0" allow="pedestrian" speed="13.89" length="330.32" width="2.00" shape="-346.64,41.68 -265.79,16.06 -191.82,1.92 -111.06,-11.91 -78.63,-15.81 -65.88,-16.10 -40.30,-18.45 -22.83,-19.52"/>
+        <lane id="estanislao_exit_1" index="1" disallow="pedestrian" speed="13.89" length="330.32" shape="-345.85,44.15 -265.15,18.59 -191.36,4.48 -110.68,-9.33 -78.44,-13.22 -65.73,-13.50 -40.10,-15.86 -22.72,-16.92"/>
+    </edge>
+    <edge id="northbound_entrance" from="J3" to="main_junction" priority="-1" spreadType="center" shape="-25.89,-248.39 -10.07,-44.37">
+        <lane id="northbound_entrance_0" index="0" allow="pedestrian" speed="13.89" length="204.42" width="2.00" shape="-22.70,-248.64 -6.90,-44.83"/>
+        <lane id="northbound_entrance_1" index="1" disallow="pedestrian" speed="13.89" length="204.42" shape="-25.29,-248.44 -9.49,-44.63"/>
+        <lane id="northbound_entrance_2" index="2" disallow="pedestrian" speed="13.89" length="204.42" shape="-28.48,-248.19 -12.68,-44.38"/>
+    </edge>
+    <edge id="northbound_exit" from="main_junction" to="J25" priority="-1" spreadType="center" shape="-0.38,59.97 14.73,245.99">
+        <lane id="northbound_exit_0" index="0" allow="pedestrian" speed="13.89" length="186.63" width="2.00" shape="2.81,59.71 17.92,245.73"/>
+        <lane id="northbound_exit_1" index="1" disallow="pedestrian" speed="13.89" length="186.63" shape="0.22,59.92 15.33,245.94"/>
+        <lane id="northbound_exit_2" index="2" disallow="pedestrian" speed="13.89" length="186.63" shape="-2.97,60.18 12.14,246.20"/>
+    </edge>
+    <edge id="southbound_entrance" from="J22" to="main_junction" priority="-1" spreadType="center" shape="6.30,246.55 -8.82,60.16">
+        <lane id="southbound_entrance_0" index="0" allow="pedestrian" speed="13.89" length="186.51" width="2.00" shape="3.11,246.81 -11.97,60.91"/>
+        <lane id="southbound_entrance_1" index="1" disallow="pedestrian" speed="13.89" length="186.51" shape="5.70,246.60 -9.38,60.70"/>
+        <lane id="southbound_entrance_2" index="2" disallow="pedestrian" speed="13.89" length="186.51" shape="8.89,246.34 -6.19,60.44"/>
+    </edge>
+    <edge id="southbound_exit" from="main_junction" to="J2" priority="-1" spreadType="center" shape="-18.47,-43.93 -34.25,-247.33">
+        <lane id="southbound_exit_0" index="0" allow="pedestrian" speed="13.89" length="204.01" width="2.00" shape="-21.66,-43.68 -37.44,-247.08"/>
+        <lane id="southbound_exit_1" index="1" disallow="pedestrian" speed="13.89" length="204.01" shape="-19.07,-43.88 -34.85,-247.28"/>
+        <lane id="southbound_exit_2" index="2" disallow="pedestrian" speed="13.89" length="204.01" shape="-15.88,-44.13 -31.66,-247.53"/>
+    </edge>
+
+    <tlLogic id="main_tl" type="static" programID="0" offset="0">
+        <phase duration="60" state="GGGGGrrrrrrrrrrrrrrrrrrrrrrrrr" name="southbound"/>
+        <phase duration="60" state="rrrrrGGGGGGrrrrrrrrrrrrrrrrrrr" name="brudger"/>
+        <phase duration="60" state="rrrrrrrrrrrGGGGGrrrrrrrrrrrrrr" name="northbound"/>
+        <phase duration="60" state="rrrrrrrrrrrrrrrrGGGGGGrrrrrrrr" name="estanislao"/>
+        <phase duration="60" state="rrrrrrrrrrrrrrrrrrrrrrGGGGGGrr" name="cityhall"/>
+        <phase duration="30" state="rrrrrrrrrrrrrrrrrrrrrrrrrrrrGG" name="pedestrian"/>
+    </tlLogic>
+
+    <junction id="J13" type="priority" x="-59.52" y="52.41" incLanes="cityhall_entrance_0 cityhall_entrance_1" intLanes=":J13_0_0" shape="-59.30,57.61 -59.52,52.41 -64.72,52.60 -64.03,55.48 -63.27,56.46 -62.23,57.15 -60.90,57.53">
+        <request index="0" response="0" foes="0" cont="0"/>
+    </junction>
+    <junction id="J14" type="priority" x="-60.67" y="20.17" incLanes="E4_0 E4_1" intLanes=":J14_0_0" shape="-65.87,20.36 -60.67,20.17 -61.09,14.99 -63.82,15.76 -64.76,16.53 -65.41,17.55 -65.78,18.83">
+        <request index="0" response="0" foes="0" cont="0"/>
+    </junction>
+    <junction id="J2" type="dead_end" x="-34.25" y="-247.33" incLanes="southbound_exit_0 southbound_exit_1 southbound_exit_2" intLanes="" shape="-38.44,-247.01 -30.06,-247.65"/>
+    <junction id="J22" type="dead_end" x="6.30" y="246.55" incLanes="" intLanes="" shape="10.49,246.21 2.11,246.89"/>
+    <junction id="J25" type="dead_end" x="14.73" y="245.99" incLanes="northbound_exit_0 northbound_exit_1 northbound_exit_2" intLanes="" shape="18.92,245.65 10.54,246.33"/>
+    <junction id="J3" type="dead_end" x="-25.89" y="-248.39" incLanes="" intLanes="" shape="-30.08,-248.07 -21.70,-248.71"/>
+    <junction id="J5" type="dead_end" x="-345.37" y="45.68" incLanes="estanislao_entrance_0 estanislao_entrance_1" intLanes="" shape="-345.37,45.68 -343.80,50.64 -345.37,45.68"/>
+    <junction id="J9" type="dead_end" x="273.64" y="16.90" incLanes="brudger_entrance_0 brudger_entrance_1" intLanes="" shape="273.64,16.90 273.45,11.70 273.64,16.90"/>
+    <junction id="main_junction" type="traffic_light" x="-10.22" y="17.21" incLanes="southbound_entrance_0 southbound_entrance_1 southbound_entrance_2 brudger_exit_0 brudger_exit_1 northbound_entrance_0 northbound_entrance_1 northbound_entrance_2 estanislao_exit_0 estanislao_exit_1 cityhall_exit_0 cityhall_exit_1 :main_junction_w1_0 :main_junction_w3_0" intLanes=":main_junction_0_0 :main_junction_1_0 :main_junction_2_0 :main_junction_2_1 :main_junction_4_0 :main_junction_28_0 :main_junction_28_1 :main_junction_7_0 :main_junction_8_0 :main_junction_29_0 :main_junction_29_1 :main_junction_11_0 :main_junction_12_0 :main_junction_12_1 :main_junction_14_0 :main_junction_15_0 :main_junction_30_0 :main_junction_30_1 :main_junction_18_0 :main_junction_31_0 :main_junction_31_1 :main_junction_21_0 :main_junction_22_0 :main_junction_32_0 :main_junction_32_1 :main_junction_25_0 :main_junction_33_0 :main_junction_33_1 :main_junction_c0_0 :main_junction_c1_0" shape="-12.97,60.99 3.81,59.63 2.64,44.60 1.81,32.30 1.31,22.73 1.14,15.87 1.31,11.74 1.13,-0.04 -1.22,-4.92 -2.39,-11.14 -3.56,-19.88 -4.73,-31.13 -5.90,-44.91 -22.66,-43.61 -22.17,-36.59 -21.89,-30.84 -21.82,-26.35 -21.96,-23.14 -22.87,-20.52 -21.49,11.74 -21.25,17.43 -19.60,55.91 -16.11,56.35 -13.27,59.36" customShape="1">
+        <request index="0"  response="010000000000000000000000000000" foes="010000001000000100000010000000" cont="0"/>
+        <request index="1"  response="011101100000000000000000000000" foes="011111111000001100000110000000" cont="0"/>
+        <request index="2"  response="111101100110110000001000000000" foes="111111100111111100011110000000" cont="0"/>
+        <request index="3"  response="111101000110100000011000000000" foes="111111100111111100011110000000" cont="0"/>
+        <request index="4"  response="011100000110000011111000000000" foes="011110000111000011111110000000" cont="0"/>
+        <request index="5"  response="010100000010000011000000000000" foes="011100000110000011000000000000" cont="1"/>
+        <request index="6"  response="011100000110000011000000000000" foes="011100000110000011000000000000" cont="1"/>
+        <request index="7"  response="001100000110000111000000011111" foes="001100001110000111000000011111" cont="0"/>
+        <request index="8"  response="000011100110001111000000011110" foes="000011111110001111000000011110" cont="0"/>
+        <request index="9"  response="100011100001111111000000011100" foes="100011100001111111000000011100" cont="1"/>
+        <request index="10" response="100011100011111111000000011100" foes="100011100011111111000000011100" cont="1"/>
+        <request index="11" response="100000000000000000000000000000" foes="100010000001000000000000010000" cont="0"/>
+        <request index="12" response="110100000010000000011001100000" foes="111110000111000000011111110000" cont="0"/>
+        <request index="13" response="111100000110000000011001000000" foes="111110000111000000011111110000" cont="0"/>
+        <request index="14" response="101100000110000000011000001111" foes="101110001111000000011110001111" cont="0"/>
+        <request index="15" response="100001100110000000011000001110" foes="100001111111000000011100001110" cont="0"/>
+        <request index="16" response="100000100000000000001000001100" foes="100001100000000000011000001100" cont="1"/>
+        <request index="17" response="100001100000000000011000001100" foes="100001100000000000011000001100" cont="1"/>
+        <request index="18" response="000001100000001111111000011100" foes="000011100000001111111000011100" cont="0"/>
+        <request index="19" response="010111100000001111000111111100" foes="011111100000001111010111111100" cont="1"/>
+        <request index="20" response="011111100000001111000111111100" foes="011111100000001111000111111100" cont="1"/>
+        <request index="21" response="001111100000001100000110000011" foes="001111100000001100000110000011" cont="0"/>
+        <request index="22" response="000000000000001000000100000010" foes="000000000000001000000100000010" cont="0"/>
+        <request index="23" response="100000001111111000001100001110" foes="100000001111111000011100001110" cont="1"/>
+        <request index="24" response="100000001111111000011100001110" foes="100000001111111000011100001110" cont="1"/>
+        <request index="25" response="000000000111000111111000011110" foes="000000001111000111111100011110" cont="0"/>
+        <request index="26" response="010000001110000111000011111110" foes="010000001110000111000011111110" cont="1"/>
+        <request index="27" response="010000001110000111000011111110" foes="010000001110000111000011111110" cont="1"/>
+        <request index="28" response="000000000000000000000000000000" foes="001100000110000011000001111111" cont="0"/>
+        <request index="29" response="000000000000000000000000000000" foes="000001100000111111111000001100" cont="0"/>
+    </junction>
+
+    <junction id=":main_junction_28_0" type="internal" x="-0.05" y="55.93" incLanes=":main_junction_5_0" intLanes=":main_junction_12_0 :main_junction_12_1 :main_junction_19_0 :main_junction_19_1 :main_junction_26_0 :main_junction_26_1 :main_junction_c0_0"/>
+    <junction id=":main_junction_28_1" type="internal" x="-3.20" y="56.19" incLanes=":main_junction_5_1" intLanes=":main_junction_12_0 :main_junction_12_1 :main_junction_19_0 :main_junction_19_1 :main_junction_26_0 :main_junction_26_1 :main_junction_c0_0"/>
+    <junction id=":main_junction_29_0" type="internal" x="-18.09" y="-39.95" incLanes=":main_junction_9_0" intLanes=":main_junction_2_0 :main_junction_2_1 :main_junction_4_0 :main_junction_12_0 :main_junction_12_1 :main_junction_14_0 :main_junction_15_0 :main_junction_16_0 :main_junction_16_1 :main_junction_18_0 :main_junction_23_0 :main_junction_23_1 :main_junction_25_0 :main_junction_c1_0"/>
+    <junction id=":main_junction_29_1" type="internal" x="-15.42" y="-40.16" incLanes=":main_junction_9_1" intLanes=":main_junction_2_0 :main_junction_2_1 :main_junction_4_0 :main_junction_12_0 :main_junction_12_1 :main_junction_14_0 :main_junction_15_0 :main_junction_16_0 :main_junction_16_1 :main_junction_18_0 :main_junction_23_0 :main_junction_23_1 :main_junction_25_0 :main_junction_c1_0"/>
+    <junction id=":main_junction_30_0" type="internal" x="-18.88" y="-39.89" incLanes=":main_junction_16_0" intLanes=":main_junction_2_0 :main_junction_2_1 :main_junction_9_0 :main_junction_9_1 :main_junction_23_0 :main_junction_23_1 :main_junction_c1_0"/>
+    <junction id=":main_junction_30_1" type="internal" x="-15.76" y="-40.13" incLanes=":main_junction_16_1" intLanes=":main_junction_2_0 :main_junction_2_1 :main_junction_9_0 :main_junction_9_1 :main_junction_23_0 :main_junction_23_1 :main_junction_c1_0"/>
+    <junction id=":main_junction_31_0" type="internal" x="-0.23" y="55.94" incLanes=":main_junction_19_0" intLanes=":main_junction_2_0 :main_junction_2_1 :main_junction_4_0 :main_junction_5_0 :main_junction_5_1 :main_junction_7_0 :main_junction_8_0 :main_junction_12_0 :main_junction_12_1 :main_junction_14_0 :main_junction_15_0 :main_junction_23_0 :main_junction_23_1 :main_junction_25_0 :main_junction_26_0 :main_junction_26_1 :main_junction_c0_0"/>
+    <junction id=":main_junction_31_1" type="internal" x="-3.39" y="56.20" incLanes=":main_junction_19_1" intLanes=":main_junction_2_0 :main_junction_2_1 :main_junction_4_0 :main_junction_5_0 :main_junction_5_1 :main_junction_7_0 :main_junction_8_0 :main_junction_12_0 :main_junction_12_1 :main_junction_14_0 :main_junction_15_0 :main_junction_23_0 :main_junction_23_1 :main_junction_25_0 :main_junction_26_0 :main_junction_26_1 :main_junction_c0_0"/>
+    <junction id=":main_junction_32_0" type="internal" x="-18.83" y="-39.89" incLanes=":main_junction_23_0" intLanes=":main_junction_1_0 :main_junction_2_0 :main_junction_2_1 :main_junction_8_0 :main_junction_9_0 :main_junction_9_1 :main_junction_15_0 :main_junction_16_0 :main_junction_16_1 :main_junction_18_0 :main_junction_19_0 :main_junction_19_1 :main_junction_21_0 :main_junction_c1_0"/>
+    <junction id=":main_junction_32_1" type="internal" x="-15.67" y="-40.14" incLanes=":main_junction_23_1" intLanes=":main_junction_1_0 :main_junction_2_0 :main_junction_2_1 :main_junction_8_0 :main_junction_9_0 :main_junction_9_1 :main_junction_15_0 :main_junction_16_0 :main_junction_16_1 :main_junction_18_0 :main_junction_19_0 :main_junction_19_1 :main_junction_21_0 :main_junction_c1_0"/>
+    <junction id=":main_junction_33_0" type="internal" x="-0.33" y="55.95" incLanes=":main_junction_26_0" intLanes=":main_junction_1_0 :main_junction_2_0 :main_junction_2_1 :main_junction_4_0 :main_junction_5_0 :main_junction_5_1 :main_junction_7_0 :main_junction_12_0 :main_junction_12_1 :main_junction_14_0 :main_junction_19_0 :main_junction_19_1 :main_junction_21_0 :main_junction_c0_0"/>
+    <junction id=":main_junction_33_1" type="internal" x="-3.48" y="56.21" incLanes=":main_junction_26_1" intLanes=":main_junction_1_0 :main_junction_2_0 :main_junction_2_1 :main_junction_4_0 :main_junction_5_0 :main_junction_5_1 :main_junction_7_0 :main_junction_12_0 :main_junction_12_1 :main_junction_14_0 :main_junction_19_0 :main_junction_19_1 :main_junction_21_0 :main_junction_c0_0"/>
+
+    <connection from="E4" to="cityhall_exit" fromLane="1" toLane="1" via=":J14_0_0" dir="l" state="M"/>
+    <connection from="brudger_exit" to="northbound_exit" fromLane="1" toLane="1" via=":main_junction_5_0" tl="main_tl" linkIndex="5" dir="r" state="o"/>
+    <connection from="brudger_exit" to="northbound_exit" fromLane="1" toLane="2" via=":main_junction_5_1" tl="main_tl" linkIndex="6" dir="r" state="o"/>
+    <connection from="brudger_exit" to="cityhall_entrance" fromLane="1" toLane="1" via=":main_junction_7_0" tl="main_tl" linkIndex="7" dir="s" state="o"/>
+    <connection from="brudger_exit" to="estanislao_entrance" fromLane="1" toLane="1" via=":main_junction_8_0" tl="main_tl" linkIndex="8" dir="s" state="o"/>
+    <connection from="brudger_exit" to="southbound_exit" fromLane="1" toLane="1" via=":main_junction_9_0" tl="main_tl" linkIndex="9" dir="l" state="o"/>
+    <connection from="brudger_exit" to="southbound_exit" fromLane="1" toLane="2" via=":main_junction_9_1" tl="main_tl" linkIndex="10" dir="l" state="o"/>
+    <connection from="cityhall_entrance" to="E4" fromLane="1" toLane="1" via=":J13_0_0" dir="l" state="M"/>
+    <connection from="cityhall_exit" to="estanislao_entrance" fromLane="1" toLane="1" via=":main_junction_22_0" tl="main_tl" linkIndex="22" dir="r" state="o"/>
+    <connection from="cityhall_exit" to="southbound_exit" fromLane="1" toLane="1" via=":main_junction_23_0" tl="main_tl" linkIndex="23" dir="R" state="o"/>
+    <connection from="cityhall_exit" to="southbound_exit" fromLane="1" toLane="2" via=":main_junction_23_1" tl="main_tl" linkIndex="24" dir="R" state="o"/>
+    <connection from="cityhall_exit" to="brudger_entrance" fromLane="1" toLane="1" via=":main_junction_25_0" tl="main_tl" linkIndex="25" dir="s" state="o"/>
+    <connection from="cityhall_exit" to="northbound_exit" fromLane="1" toLane="1" via=":main_junction_26_0" tl="main_tl" linkIndex="26" dir="l" state="o"/>
+    <connection from="cityhall_exit" to="northbound_exit" fromLane="1" toLane="2" via=":main_junction_26_1" tl="main_tl" linkIndex="27" dir="l" state="o"/>
+    <connection from="estanislao_exit" to="southbound_exit" fromLane="1" toLane="1" via=":main_junction_16_0" tl="main_tl" linkIndex="16" dir="r" state="o"/>
+    <connection from="estanislao_exit" to="southbound_exit" fromLane="1" toLane="2" via=":main_junction_16_1" tl="main_tl" linkIndex="17" dir="r" state="o"/>
+    <connection from="estanislao_exit" to="brudger_entrance" fromLane="1" toLane="1" via=":main_junction_18_0" tl="main_tl" linkIndex="18" dir="s" state="o"/>
+    <connection from="estanislao_exit" to="northbound_exit" fromLane="1" toLane="1" via=":main_junction_19_0" tl="main_tl" linkIndex="19" dir="L" state="o"/>
+    <connection from="estanislao_exit" to="northbound_exit" fromLane="1" toLane="2" via=":main_junction_19_1" tl="main_tl" linkIndex="20" dir="L" state="o"/>
+    <connection from="estanislao_exit" to="cityhall_entrance" fromLane="1" toLane="1" via=":main_junction_21_0" tl="main_tl" linkIndex="21" dir="r" state="o"/>
+    <connection from="northbound_entrance" to="brudger_entrance" fromLane="1" toLane="1" via=":main_junction_11_0" tl="main_tl" linkIndex="11" dir="r" state="o"/>
+    <connection from="northbound_entrance" to="northbound_exit" fromLane="1" toLane="1" via=":main_junction_12_0" tl="main_tl" linkIndex="12" dir="s" state="o"/>
+    <connection from="northbound_entrance" to="northbound_exit" fromLane="2" toLane="2" via=":main_junction_12_1" tl="main_tl" linkIndex="13" dir="s" state="o"/>
+    <connection from="northbound_entrance" to="cityhall_entrance" fromLane="2" toLane="1" via=":main_junction_14_0" tl="main_tl" linkIndex="14" dir="l" state="o"/>
+    <connection from="northbound_entrance" to="estanislao_entrance" fromLane="2" toLane="1" via=":main_junction_15_0" tl="main_tl" linkIndex="15" dir="l" state="o"/>
+    <connection from="southbound_entrance" to="cityhall_entrance" fromLane="1" toLane="1" via=":main_junction_0_0" tl="main_tl" linkIndex="0" dir="r" state="o"/>
+    <connection from="southbound_entrance" to="estanislao_entrance" fromLane="1" toLane="1" via=":main_junction_1_0" tl="main_tl" linkIndex="1" dir="R" state="o"/>
+    <connection from="southbound_entrance" to="southbound_exit" fromLane="1" toLane="1" via=":main_junction_2_0" tl="main_tl" linkIndex="2" dir="s" state="o"/>
+    <connection from="southbound_entrance" to="southbound_exit" fromLane="2" toLane="2" via=":main_junction_2_1" tl="main_tl" linkIndex="3" dir="s" state="o"/>
+    <connection from="southbound_entrance" to="brudger_entrance" fromLane="2" toLane="1" via=":main_junction_4_0" tl="main_tl" linkIndex="4" dir="l" state="o"/>
+
+    <connection from=":J13_0" to="E4" fromLane="0" toLane="1" dir="l" state="M"/>
+    <connection from=":J14_0" to="cityhall_exit" fromLane="0" toLane="1" dir="l" state="M"/>
+    <connection from=":main_junction_0" to="cityhall_entrance" fromLane="0" toLane="1" dir="r" state="M"/>
+    <connection from=":main_junction_1" to="estanislao_entrance" fromLane="0" toLane="1" dir="R" state="M"/>
+    <connection from=":main_junction_2" to="southbound_exit" fromLane="0" toLane="1" dir="s" state="M"/>
+    <connection from=":main_junction_2" to="southbound_exit" fromLane="1" toLane="2" dir="s" state="M"/>
+    <connection from=":main_junction_4" to="brudger_entrance" fromLane="0" toLane="1" dir="l" state="M"/>
+    <connection from=":main_junction_5" to="northbound_exit" fromLane="0" toLane="1" via=":main_junction_28_0" dir="r" state="m"/>
+    <connection from=":main_junction_28" to="northbound_exit" fromLane="0" toLane="1" dir="r" state="m"/>
+    <connection from=":main_junction_5" to="northbound_exit" fromLane="1" toLane="2" via=":main_junction_28_1" dir="r" state="m"/>
+    <connection from=":main_junction_28" to="northbound_exit" fromLane="1" toLane="2" dir="r" state="m"/>
+    <connection from=":main_junction_7" to="cityhall_entrance" fromLane="0" toLane="1" dir="s" state="M"/>
+    <connection from=":main_junction_8" to="estanislao_entrance" fromLane="0" toLane="1" dir="s" state="M"/>
+    <connection from=":main_junction_9" to="southbound_exit" fromLane="0" toLane="1" via=":main_junction_29_0" dir="l" state="m"/>
+    <connection from=":main_junction_29" to="southbound_exit" fromLane="0" toLane="1" dir="l" state="m"/>
+    <connection from=":main_junction_9" to="southbound_exit" fromLane="1" toLane="2" via=":main_junction_29_1" dir="l" state="m"/>
+    <connection from=":main_junction_29" to="southbound_exit" fromLane="1" toLane="2" dir="l" state="m"/>
+    <connection from=":main_junction_11" to="brudger_entrance" fromLane="0" toLane="1" dir="r" state="M"/>
+    <connection from=":main_junction_12" to="northbound_exit" fromLane="0" toLane="1" dir="s" state="M"/>
+    <connection from=":main_junction_12" to="northbound_exit" fromLane="1" toLane="2" dir="s" state="M"/>
+    <connection from=":main_junction_14" to="cityhall_entrance" fromLane="0" toLane="1" dir="l" state="M"/>
+    <connection from=":main_junction_15" to="estanislao_entrance" fromLane="0" toLane="1" dir="l" state="M"/>
+    <connection from=":main_junction_16" to="southbound_exit" fromLane="0" toLane="1" via=":main_junction_30_0" dir="r" state="m"/>
+    <connection from=":main_junction_30" to="southbound_exit" fromLane="0" toLane="1" dir="r" state="m"/>
+    <connection from=":main_junction_16" to="southbound_exit" fromLane="1" toLane="2" via=":main_junction_30_1" dir="r" state="m"/>
+    <connection from=":main_junction_30" to="southbound_exit" fromLane="1" toLane="2" dir="r" state="m"/>
+    <connection from=":main_junction_18" to="brudger_entrance" fromLane="0" toLane="1" dir="s" state="M"/>
+    <connection from=":main_junction_19" to="northbound_exit" fromLane="0" toLane="1" via=":main_junction_31_0" dir="L" state="m"/>
+    <connection from=":main_junction_31" to="northbound_exit" fromLane="0" toLane="1" dir="L" state="m"/>
+    <connection from=":main_junction_19" to="northbound_exit" fromLane="1" toLane="2" via=":main_junction_31_1" dir="L" state="m"/>
+    <connection from=":main_junction_31" to="northbound_exit" fromLane="1" toLane="2" dir="L" state="m"/>
+    <connection from=":main_junction_21" to="cityhall_entrance" fromLane="0" toLane="1" dir="r" state="M"/>
+    <connection from=":main_junction_22" to="estanislao_entrance" fromLane="0" toLane="1" dir="r" state="M"/>
+    <connection from=":main_junction_23" to="southbound_exit" fromLane="0" toLane="1" via=":main_junction_32_0" dir="R" state="m"/>
+    <connection from=":main_junction_32" to="southbound_exit" fromLane="0" toLane="1" dir="R" state="m"/>
+    <connection from=":main_junction_23" to="southbound_exit" fromLane="1" toLane="2" via=":main_junction_32_1" dir="R" state="m"/>
+    <connection from=":main_junction_32" to="southbound_exit" fromLane="1" toLane="2" dir="R" state="m"/>
+    <connection from=":main_junction_25" to="brudger_entrance" fromLane="0" toLane="1" dir="s" state="M"/>
+    <connection from=":main_junction_26" to="northbound_exit" fromLane="0" toLane="1" via=":main_junction_33_0" dir="l" state="m"/>
+    <connection from=":main_junction_33" to="northbound_exit" fromLane="0" toLane="1" dir="l" state="m"/>
+    <connection from=":main_junction_26" to="northbound_exit" fromLane="1" toLane="2" via=":main_junction_33_1" dir="l" state="m"/>
+    <connection from=":main_junction_33" to="northbound_exit" fromLane="1" toLane="2" dir="l" state="m"/>
+
+    <connection from=":J13_w0" to="E4" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from="cityhall_entrance" to=":J13_w0" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":J14_w0" to="cityhall_exit" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from="E4" to=":J14_w0" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":J5_w0" to="estanislao_exit" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from="estanislao_entrance" to=":J5_w0" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":J9_w0" to="brudger_exit" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from="brudger_entrance" to=":J9_w0" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":main_junction_c0" to=":main_junction_w0" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":main_junction_c1" to=":main_junction_w2" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":main_junction_w0" to="cityhall_entrance" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from="southbound_entrance" to=":main_junction_w0" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":main_junction_w1" to=":main_junction_c0" fromLane="0" toLane="0" tl="main_tl" linkIndex="28" dir="s" state="M"/>
+    <connection from=":main_junction_w1" to="northbound_exit" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from="brudger_exit" to=":main_junction_w1" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":main_junction_w2" to="brudger_entrance" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from="northbound_entrance" to=":main_junction_w2" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":main_junction_w3" to=":main_junction_c1" fromLane="0" toLane="0" tl="main_tl" linkIndex="29" dir="s" state="M"/>
+    <connection from=":main_junction_w3" to="southbound_exit" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from="estanislao_exit" to=":main_junction_w3" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":main_junction_w4" to="estanislao_entrance" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from="cityhall_exit" to=":main_junction_w4" fromLane="0" toLane="0" dir="s" state="M"/>
+</net>

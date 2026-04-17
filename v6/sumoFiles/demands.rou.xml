@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2026-03-30T20:45:12.989475+08:00 by Eclipse SUMO netedit 1.26.0
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <!-- VTypes -->
+    <vType id="car" maxSpeed="13.90" vClass="passenger" accel="2.6" decel="4.5" sigma="0.5"/>
+    <vType id="emergency" maxSpeed="16.00" vClass="emergency" color="red" accel="3.5" decel="5.0"/>
+    <vType id="pedestrian" maxSpeed="10.44" vClass="pedestrian" impatience="0.50"/>
+    <vType id="truck" length="10.00" maxSpeed="8.30" vClass="truck" accel="1.3" decel="3.5"/>
+    <!-- Routes -->
+    <route id="brudger_city" edges="brudger_exit cityhall_entrance"/>
+    <route id="brudger_est" edges="brudger_exit estanislao_entrance"/>
+    <route id="brudger_north" edges="brudger_exit northbound_exit"/>
+    <route id="brudger_south" edges="brudger_exit southbound_exit"/>
+    <route id="cityhall_brudger" edges="cityhall_exit brudger_entrance"/>
+    <route id="cityhall_est" edges="cityhall_exit estanislao_entrance"/>
+    <route id="cityhall_north" edges="cityhall_exit northbound_exit"/>
+    <route id="cityhall_south" edges="cityhall_exit southbound_exit"/>
+    <route id="estanislao_brudger" edges="estanislao_exit brudger_entrance"/>
+    <route id="estanislao_city" edges="estanislao_exit cityhall_entrance"/>
+    <route id="estanislao_north" edges="estanislao_exit northbound_exit"/>
+    <route id="estanislao_south" edges="estanislao_exit southbound_exit"/>
+    <route id="northbound_brudger" edges="northbound_entrance brudger_entrance"/>
+    <route id="northbound_city" edges="northbound_entrance cityhall_entrance"/>
+    <route id="northbound_est" edges="northbound_entrance estanislao_entrance"/>
+    <route id="northbound_thru" edges="northbound_entrance northbound_exit"/>
+    <route id="ped_route_up" edges="brudger_exit cityhall_entrance"/>
+    <route id="southbound_brudger" edges="southbound_entrance brudger_entrance"/>
+    <route id="southbound_city" edges="southbound_entrance cityhall_entrance"/>
+    <route id="southbound_est" edges="southbound_entrance estanislao_entrance"/>
+    <route id="southbound_thru" edges="southbound_entrance southbound_exit"/>
+</routes>

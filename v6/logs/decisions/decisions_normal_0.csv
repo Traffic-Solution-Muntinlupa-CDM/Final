@@ -1,0 +1,4 @@
+step,chosen_phase,time_pct,actual_seconds,north_count,north_wait_norm,north_ev,south_count,south_wait_norm,south_ev,cityhall_count,cityhall_wait_norm,cityhall_ev,brudger_count,brudger_wait_norm,brudger_ev,estanislao_count,estanislao_wait_norm,estanislao_ev,ped_exists,ped_wait_norm,weather,day_norm,time_of_day
+34,1,0.223,21,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,-1.000,0.000,0.000
+64,4,0.818,50,2.000,0.000,0.000,1.000,0.000,0.000,4.000,0.029,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,-1.000,0.000,0.000
+76,4,1.000,60,8.000,0.074,0.000,9.000,0.064,0.000,3.000,0.000,1.000,5.000,0.064,0.000,3.000,0.007,0.000,0.000,0.000,-1.000,0.000,0.001
