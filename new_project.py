@@ -2,29 +2,39 @@ import sys
 import os
 import cv2
 from ultralytics import YOLO
+from stable_baselines3 import PPO
 
 TEST_MODE = False  # True = TestCases, False = Actual
 
 ROOT = os.path.abspath(".")
 sys.path.append(ROOT)
-sys.path.append(os.path.join(ROOT, "v6", "model"))
+sys.path.append(os.path.join(ROOT, "discreteV1"))
 
-from PPO import PPOAgent
+PHASES = ["southbound", "brudger", "northbound", "estanislao", "cityhall", "pedestrian"]
+DURATIONS = [10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60]
 
-
-MODEL_INPUTS = 20
-NUM_PHASES = 6
-
-agent = PPOAgent(
-    num_inputs=MODEL_INPUTS,
-    num_phases=NUM_PHASES,
-    lr_actor=0.0003,
-    lr_critic=0.001,
-    gamma=0.99
+MAX_GREEN_DURATION = 60
+YELLOW_DURATION = 10
+PEDESTRIAN_DURATION = 30
+MAX_CAP_TIME = (
+    (MAX_GREEN_DURATION * 5) +    
+    (YELLOW_DURATION * 6) +      
+    PEDESTRIAN_DURATION
 )
 
-agent.load("v6/checkpoints/v6_model_checkpoint_1020.pth")
-agent.policy_old.eval()
+
+
+MAX_EDGE_CAPACITY = {
+    "northbound_entrance": 30,
+    "southbound_entrance": 30,
+    "cityhall_exit": 5,
+    "brudger_exit": 15,
+    "estanislao_exit": 15
+}
+
+NUM_PHASES = 6
+
+agent = PPO.load("./discreteV1/ppo_traffic_final.zip")
 
 yolo = YOLO("yolov8n.pt")
 CAR_CLASS_ID = 2
@@ -80,23 +90,35 @@ def count_cars(image_path):
 
 def process_case(case_name, vehicle_counts):
 
+    # order of state
+    ENTERING_EDGES = [
+    "northbound_entrance",
+    "southbound_entrance",
+    "cityhall_exit",
+    "brudger_exit",
+    "estanislao_exit"
+    ]
+    normalized_counts = [ (count / MAX_EDGE_CAPACITY[edge]) for count, edge in zip(vehicle_counts, ENTERING_EDGES)]
+
     state = [
-        vehicle_counts,
-        [0, 0, 0, 0, 0],  # max waiting time
-        [0, 0, 0, 0, 0],  # emergency vehicles
-        0,                # pedestrian request
-        0,                # pedestrian waiting time
-        0,                # weather
-        0,                # day of week
-        0                 # time of day
+        normalized_counts[0], 0, # northbound count and wait
+        normalized_counts[1], 0, # southbound count and wait
+        normalized_counts[2], 0, # cityhall count and wait
+        normalized_counts[3], 0, # brudger count and wait
+        normalized_counts[4], 0, # estanislao count and wait
+        0, 0, # ped exist, ped wait
+        -1 # weather
     ]
 
-    print(state)
-    state = state[0] + state[1] + state[2] + [
-        state[3], state[4], state[5], state[6], state[7]
-    ]
+    action, _states = agent.predict(state, deterministic=True)
 
-    phase, time = agent.get_deterministic_action(state)
+    phase_idx, duration_idx = action
+    phase = PHASES[int(phase_idx)]
+    
+    if phase == "pedestrian":
+        time = PEDESTRIAN_DURATION
+    else:
+        time = DURATIONS[int(duration_idx)]
 
     print("\n==============================")
     print("Mode:", "TEST" if TEST_MODE else "ACTUAL")
